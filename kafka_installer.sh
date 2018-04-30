@@ -15,6 +15,7 @@ then
       ~/kafka_2.12-1.1.0/bin/kafka-server-start.sh ~/kafka_2.12-1.1.0/config/server.properties
     else
       echo "kafka default port [9092] is in use"
+    fi
 else
     echo "2181 is occupied"
 fi
