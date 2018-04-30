@@ -10,9 +10,9 @@ then
     then
       wget http://apache.lauf-forum.at/kafka/1.1.0/kafka_2.12-1.1.0.tgz
       tar -xvf kafka_2.12-1.1.0.tgz
-      cd ./kafka_2.12-1.1.0
       echo "starting kafka server..."
-      ~/kafka_2.12-1.1.0/bin/kafka-server-start.sh ~/kafka_2.12-1.1.0/config/server.properties
+      cd ./kafka_2.12-1.1.0
+      ./bin/kafka-server-start.sh ./config/server.properties
     else
       echo "kafka default port [9092] is in use"
     fi
