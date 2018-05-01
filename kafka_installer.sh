@@ -1,8 +1,9 @@
 set -e
-echo "checking port 2181 availability..."
+cd ~
+echo "checking port [2181] availability..."
 if ! lsof -i:2181
 then
-    echo "2181 is free"
+    echo "[2181] is free"
     echo "installing zookeeper...."
     sudo apt-get install zookeeperd
     echo "installing kafka..."
@@ -16,5 +17,5 @@ then
       echo "kafka default port [9092] is in use"
     fi
 else
-    echo "2181 is occupied"
+    echo "[2181] is occupied"
 fi
