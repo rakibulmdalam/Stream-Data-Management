@@ -1,5 +1,6 @@
 from kafka import KafkaProducer
 from kafka.errors import KafkaError
+import random
 
 producer = KafkaProducer(bootstrap_servers=['localhost:9092'])
 
