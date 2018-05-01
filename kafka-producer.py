@@ -4,17 +4,13 @@ from kafka.errors import KafkaError
 producer = KafkaProducer(bootstrap_servers=['localhost:9092'])
 
 # Asynchronous by default
-future = producer.send('my-topic', b'raw_bytes')
+temperature = random.uniform(-10, 39)
+future = producer.send('temperature', temperature)
 
-# Block for 'synchronous' sends
-try:
-    record_metadata = future.get(timeout=10)
-except KafkaError:
-    # Decide what to do if produce request failed...
-    log.exception()
-    pass
+for i in range(10):
+    try:
+        response = future.get(timeout=10)
+    except KafkaError:
+        log.exception()
 
-# Successful result returns assigned partition and offset
-print (record_metadata.topic)
-print (record_metadata.partition)
-print (record_metadata.offset)
+print(response)
