@@ -1,4 +1,4 @@
-sudo apt-get install python3-pip &>/dev/null
+sudo apt-get install python3-pip -y &>/dev/null
 
 export LC_ALL="en_US.UTF-8"
 export LC_CTYPE="en_US.UTF-8"
