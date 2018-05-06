@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/src/main/main.iml" filepath="$PROJECT_DIR$/src/main/main.iml" />
       <module fileurl="file://$PROJECT_DIR$/streamtunnel.iml" filepath="$PROJECT_DIR$/streamtunnel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/streamtunnel (1).iml" filepath="$PROJECT_DIR$/streamtunnel (1).iml" />
     </modules>
   </component>
 </project>
