@@ -6,6 +6,8 @@ sh ./kafka_installer.sh
 
 sh ./flink_installer.sh
 
+sh ./elasticsearch_installer.sh
+
 sh ./kibana_installer.sh
 
 sh ./prepare_to_listen.sh
