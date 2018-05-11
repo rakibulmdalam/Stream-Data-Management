@@ -4,5 +4,5 @@ sudo service elasticsearch start
 sudo systemctl start kibana.service
 # start zookeeper
 sudo service zookeeper start
-# start elasticsearch
-sudo service elasticsearch start
+#start flink server 
+~/flink-1.4.1/bin/start-local.sh
